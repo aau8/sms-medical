@@ -1,0 +1,19 @@
+.c-about {
+	background-color: $light;
+	padding: 40px 24px;
+}
+
+.c-about__title {
+	font-size: 22px;
+	color: $text-second;
+	line-height: 1.4;
+
+	& b {
+		font-size: 28px;
+		font-weight: 700;
+	}
+}
+
+.c-about__text {
+	margin-top: 20px;
+}

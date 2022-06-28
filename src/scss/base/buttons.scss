@@ -1,0 +1,71 @@
+// Основной шаблон кнопки
+.btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+	color: $light;
+	border-radius: 2px;
+	padding: 0 19px;
+    transition: $tr;
+    white-space: nowrap;
+    user-select: none;
+
+	&.is-fill {
+		background: $accent;
+
+		&:active {
+			background: brig-color($accent, active);
+		}
+
+		@media (any-hover: hover) {
+
+			&:hover {
+				background: brig-color($accent, hover);
+			}
+		}
+	}
+
+	&.is-ghost {
+		background: create-rgba($light, .2);
+		border: 1px solid $light;
+
+		&:active {
+			background: create-rgba($light, .35);
+		}
+
+		@media (any-hover: hover) {
+
+			&:hover {
+				background: create-rgba($light, .35);
+			}
+
+			&:active {
+				background: create-rgba($light, .4);
+			}
+		}
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 16px;
+	}
+}
+
+.link {
+	--link-box-shadow: #fff;
+	box-shadow: inset 0 -1.4px transparent;
+    transition: $tr;
+
+    @media (any-hover: hover) {
+
+        &:hover {
+			box-shadow: inset 0 -1.4px var(--link-box-shadow);
+        }
+    }
+
+    &:active {
+		opacity: .8;
+    }
+}

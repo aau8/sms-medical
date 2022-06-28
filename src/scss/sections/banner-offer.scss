@@ -1,0 +1,45 @@
+.banner-offer {
+
+}
+
+.banner-offer__container {
+
+}
+
+.banner-offer__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $light;
+	text-align: center;
+	background: $gradient-main;
+	box-shadow: $shadow-main;
+	padding: 48px 48px 36px;
+
+	@media (max-width: $tablet) {
+		padding: 32px 32px 24px;
+	}
+}
+
+.banner-offer__title {
+	max-width: 700px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.4;
+
+	@media (max-width: $tablet) {
+		font-size: 24px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 18px;
+	}
+}
+
+.banner-offer__btn {
+	margin-top: 40px;
+
+	@media (max-width: $tablet) {
+		margin-top: 24px;
+	}
+}
