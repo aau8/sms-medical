@@ -1,0 +1,35 @@
+.c-about {
+	background-color: $light;
+	padding: 40px 24px;
+}
+
+.c-about__title {
+	font-size: 22px;
+	color: $text-second;
+	line-height: 1.4;
+
+	& b {
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 20px;
+
+		& b {
+			font-size: 24px;
+		}
+	}
+
+	@media (max-width: $mobile-s) {
+		font-size: 18px;
+
+		& b {
+			font-size: 22px;
+		}
+	}
+}
+
+.c-about__text {
+	margin-top: 20px;
+}

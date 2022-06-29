@@ -1,0 +1,155 @@
+@use "sass:math";
+
+// Миксины
+@import "./mixins";
+
+// Шрифты
+// @include font('Gilroy', normal, 400, '../resources/fonts/Gilroy/Gilroy-Regular.woff2');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap');
+
+// Переменные
+// Текст
+$text-primary: #fff;
+$text-dark: #505050;
+// $text-second: #748890;
+$text-gray: #748890;
+// $title-primary: #008DD2;
+$accent: #96E5F0;
+// $accent-second: #96E5F0;
+$light: #fff;
+
+// Задний фон разделов
+$frame-accent: #748890;
+$frame-main: #2A2D31;
+$frame-light: $light;
+
+// Градиенты
+$gradient-main: linear-gradient(104.14deg, #0FA8AE 26.73%, #40A2D4 89.54%);
+
+// Тени
+$shadow-main: 0px 0px 16px rgba(93, 105, 119, 0.3);
+
+// Обводка
+$border-light: $light;
+// $input-placeholder: brig-color(#000, .3);
+
+// $error: #EB5757;
+
+// Текстовые поля
+// $tf-label: $text-second;
+
+// ================ Colors End ================
+
+
+// ================ Responsive Start ================
+$min-width: 320px;
+$max-width: 1920px;
+$max-width-container: 1320;
+$container-padding: 48;
+$container-width: $max-width-container + $container-padding;
+
+$laptop-l: 1500px;
+$laptop: 1100px;
+$tablet: 800px;
+$mobile-l: 450px;
+$mobile-m: 390px;
+$mobile-s: 330px;
+$hide-menu: $tablet;
+// ================ Responsive End ================
+
+
+// ================ Other Start ================
+$ff-main: 'Open Sans', sans-serif;
+$ff-title: 'Montserrat', sans-serif;
+$tr: .3s;
+// ================ Other End ================
+//========================================================================================================================================================
+
+// Сброс CSS
+@import "./reset";
+
+body {
+	font-family: $ff-main;
+    font-size: 18px;
+    font-weight: 400;
+    color: $text-primary;
+    line-height: 1.6;
+	background-color: $frame-main;
+
+    ._lock & {
+        overflow: hidden;
+		touch-action: none;
+    }
+
+	@media (max-width: $tablet) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 14px;
+	}
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & > .content {
+        flex: 1 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/*
+(i) Стили будут применяться ко
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+*/
+[class*="__container"] {
+    @if ($max-width-container>0) {
+        max-width: rem($max-width-container);
+        box-sizing: content-box;
+        margin: 0 auto;
+    }
+    @if ($container-padding>0) {
+        padding: 0 rem(math.div($container-padding, 2));
+    }
+
+    @media (max-width: $mobile-l) {
+        padding: 0 rem(16);
+    }
+}
+
+// Общие стили проекта
+@import "./common";
+
+// Базовые стили, шаблоны, заготовки
+@import "./base";
+
+// Компоненты блоки
+@import "./components/blocks/b-chart";
+@import "./components/blocks/b-video";
+@import "./components/blocks/b-princ";
+
+// Компоненты карточки
+@import "./components/cards/c-about";
+
+// Стили частоиспользуемых секций
+@import "./sections/header";
+@import "./sections/main";
+@import "./sections/about";
+@import "./sections/advant";
+@import "./sections/chart";
+@import "./sections/princ";
+@import "./sections/video";
+@import "./sections/banner-offer";
+@import "./sections/footer";
+
+
+// Стили для отдельных страниц
+// @import "./pages/";

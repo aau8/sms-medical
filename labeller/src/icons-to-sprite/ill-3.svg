@@ -1,0 +1,14 @@
+<svg fill="none" viewBox="0 0 280 90">
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M64.23 42.75h53.36l-3.28 40.86c-.34 2.93-2.42 5.34-5.35 5.34H72.34c-2.93 0-5-2.41-5.35-5.34l-2.76-40.86v0ZM62.33 22.67h58.98c1.55 0 2.76 1.38 2.76 3.01v13.97c0 1.72-1.2 3.1-2.76 3.1H62.33c-1.56 0-2.77-1.38-2.77-3.1V25.68c0-1.63 1.21-3.01 2.77-3.01v0Z" clip-rule="evenodd"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M66.99 28.53v7.41M75.02 28.53v7.41M83.14 28.53v7.41M91.17 28.53v7.41M99.2 28.53v7.41M107.32 28.53v7.41M115.35 28.53v7.41"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M9.51 52.77h14.5v16.96L20.85 83.3c-.26 2.05-1.67 3.78-3.72 3.78h-.45c-2.05 0-3.53-1.67-3.78-3.78L9.57 69.86l-.06-17.09v0Z" clip-rule="evenodd"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M4.38 49.77C1.3 47.9.28 42.34 6.37 40.74l22.31-4.86"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M26.31 47.85H7.21a2.4 2.4 0 0 0-2.38 2.43v.06a2.4 2.4 0 0 0 2.37 2.43h19.11a2.4 2.4 0 0 0 2.37-2.43v-.06a2.4 2.4 0 0 0-2.37-2.43ZM25.1 37.93c.18.96-.4 1.92-1.36 2.1l-13.2 2.63c-.97.2-1.93-.38-2.12-1.34"/>
+  <rect width="46" height="87" x="232.93" y="1.95" stroke="#8A96A5" stroke-width="2" rx="2"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M152.75 21.93h37.56c1.01 0 1.75 1.02 1.75 2.3v10.78c0 1.3-.74 2.4-1.75 2.4h-37.56c-.92 0-1.75-1.1-1.75-2.4V24.23c0-1.28.83-2.3 1.75-2.3v0Z" clip-rule="evenodd"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M156.72 27v4.6M162.9 27v4.6M169.08 27v4.6M175.27 27v4.6M181.45 27v4.6M187.63 27v4.6"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M154.41 37.4h34.33v42.47c0 4.6-3.88 8.47-8.5 8.47H162.9a8.52 8.52 0 0 1-8.49-8.47V37.4v0Z" clip-rule="evenodd"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M192.52 36.49H151.1c-.66 0-1.2.5-1.2 1.1v.1c0 .6.54 1.1 1.2 1.1h41.43c.66 0 1.2-.5 1.2-1.1v-.1c0-.6-.54-1.1-1.2-1.1Z"/>
+  <path stroke="#8A96A5" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="2" d="M168.34 37.87h6.93c1.47 0 2.76 1.2 2.76 2.76v29.01c0 3.41-2.76 6.27-6.27 6.27a6.26 6.26 0 0 1-6.18-6.27V40.63c0-1.57 1.29-2.76 2.76-2.76Z" clip-rule="evenodd"/>
+  <path fill="#8A96A5" d="M171.76 72.5c1.99 0 3.6-2.23 3.6-4.97 0-2.75-1.61-4.98-3.6-4.98s-3.6 2.23-3.6 4.98c0 2.74 1.61 4.97 3.6 4.97Z"/>
+</svg>

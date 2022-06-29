@@ -1,0 +1,266 @@
+.b-princ {
+	display: flex;
+	justify-content: center;
+
+	&.is-reverse {
+		flex-direction: row-reverse;
+
+		& .b-princ__content {
+			margin: 0 0 0 20px;
+		}
+
+		& .b-princ__ill {
+			// margin: 120px 0 0 0;
+		}
+
+		// & .b-princ__arrow {
+		// 	right: auto;
+		// 	left: -10%;
+		// 	bottom: 0;
+		// 	width: 37%;
+		// 	transform: translate(0, 110%);
+		// }
+	}
+
+	&_1 {
+
+		& .b-princ__arrow {
+			right: -10%;
+			bottom: 0;
+			width: 37%;
+			transform: translate(0, 110%);
+		}
+
+		& .b-princ__ill {
+			max-width: 304px;
+		}
+	}
+
+	&_2 {
+
+		& .b-princ__arrow {
+			right: auto;
+			left: -48%;
+			top: 23%;
+			bottom: auto;
+			width: 50%;
+			transform: translate(0, 0);
+		}
+
+		& .b-princ__ill {
+			max-width: 354px;
+			margin-right: 20px;
+		}
+	}
+
+	&_3 {
+
+		// & .b-princ__ill {
+		// 	max-width: 180px;
+		// 	margin: 50px 20px 0 0;
+		// }
+
+		& .b-princ__ill {
+			max-width: 277px;
+			margin: 50px 20px 0 0;
+		}
+	}
+
+	&_4 {
+
+		&.is-reverse .b-princ__content,
+		& .b-princ__content {
+			// margin-top: 15%;
+			margin: 15% 0 0 20px;
+
+			@media (max-width: $tablet) {
+				margin-top: 0;
+			}
+		}
+
+		& .b-princ__arrow {
+			right: auto;
+			left: -10%;
+			top: 110%;
+			bottom: auto;
+			width: 40%;
+			transform: translate(0, 0);
+		}
+
+		// & .b-princ__ill {
+		// 	max-width: 277px;
+		// 	margin: 50px 20px 0 0;
+		// }
+	}
+
+	&_5 {
+
+		& .b-princ__content {
+			padding-bottom: 120px;
+		}
+	}
+}
+
+.b-princ__content {
+	margin: 0 20px 0 0;
+
+	@media (max-width: $tablet) {
+		min-width: 50%;
+	}
+}
+
+.b-princ__info {
+	position: relative;
+}
+
+.b-princ__title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: $title-primary;
+
+	@media (max-width: 600px) {
+		font-size: 26px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 22px;
+	}
+
+	@media (max-width: $mobile-m) {
+		font-size: 18px;
+	}
+}
+
+.b-princ__text {
+	position: relative;
+	max-width: 450px;
+	margin-top: 20px;
+
+	@media (max-width: 600px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 14px;
+		margin-top: 16px;
+	}
+
+	@media (max-width: $mobile-m) {
+		font-size: 12px;
+		margin-top: 12px;
+	}
+}
+
+.b-princ__list {
+	// margin-top: 70px;
+	margin: 70px 0 0 116px;
+
+	& li {
+		position: relative;
+		padding-left: 43px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -2px;
+			left: 0;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background: center/contain no-repeat url("data:image/svg+xml,%3Csvg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Ccircle cx=\"15\" cy=\"15\" r=\"15\" fill=\"%239AA3AD\" fill-opacity=\"0.3\"/%3E%3Cpath d=\"M9 14.5L14.1408 21L23 9\" stroke=\"%239AA3AD\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3C/svg%3E");
+			vertical-align: middle;
+			margin-right: 13px;
+
+			@media (max-width: $mobile-l) {
+				top: 2px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+
+			@media (max-width: $mobile-l) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media (max-width: $tablet) {
+			font-size: 16px;
+		}
+
+		@media (max-width: $mobile-l) {
+			font-size: 14px;
+			padding-left: 30px;
+		}
+
+		@media (max-width: $mobile-m) {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: $tablet) {
+		margin: 50px 0 0 80px;
+	}
+
+	@media (max-width: 600px) {
+		margin: 40px 0 0 0;
+	}
+
+	@media (max-width: $mobile-l) {
+		margin: 24px 0 0 0;
+	}
+}
+
+.b-princ__ill {
+	max-width: 304px;
+	height: auto;
+    aspect-ratio: 1.5;
+	margin: 120px 50px 0 0;
+
+	@media (max-width: $tablet) {
+		margin-top: 80px;
+	}
+
+	@media (max-width: $mobile-l) {
+		margin-top: 40px;
+	}
+}
+
+.b-princ__img {
+	position: relative;
+}
+
+.b-princ__arrow {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	// top: 16%;
+	// left: -21%;
+	// width: 51%;
+
+
+    right: -10%;
+    bottom: 0;
+    width: 37%;
+    transform: translate(0, 110%);
+
+	@media (max-width: 600px) {
+		display: none;
+	}
+}
+
+// Кнопка "Все характеристики"
+.princ__more {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: create-rgba($accent, .3);
+	padding: 24px 0;
+}

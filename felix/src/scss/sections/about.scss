@@ -1,0 +1,60 @@
+.about {
+	position: relative;
+	padding-top: 16%;
+	margin-top: 0;
+
+	@media (max-width: $laptop-l) {
+		padding-top: 240px;
+	}
+
+	@media (max-width: $mobile-l) {
+		padding-top: 160px;
+	}
+}
+
+.about__header {
+	margin-bottom: 56px;
+
+	@media (max-width: $tablet) {
+		margin-bottom: 32px;
+	}
+}
+
+.about__logo {
+	position: absolute;
+	top: 0;
+	max-width: 110px;
+
+	@media (max-width: $mobile-l) {
+		max-width: 80px;
+	}
+}
+
+.about__body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+
+	@media (max-width: $laptop) {
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+
+		& .c-about {
+
+			&:first-child {
+				grid-column: 1/3;
+			}
+		}
+	}
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+
+		& .c-about {
+
+			&:first-child {
+				grid-column: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,120 @@
+.main {
+	height: 460px;
+	background: #748890;
+
+	@media (max-width: 650px) {
+		height: auto;
+	}
+}
+
+.main__container {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 650px) {
+		flex-direction: column-reverse;
+		// padding-bottom: 48px;
+	}
+}
+
+.main__content {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 14px 0;
+
+	@media (max-width: 650px) {
+		width: 100%;
+	}
+}
+
+.main__info {
+	max-width: 433px;
+	padding: 16px 0;
+	margin: auto 0;
+
+	@media (max-width: 650px) {
+		max-width: none;
+		padding-top: 0;
+	}
+}
+
+.main__title {
+	font-size: 53px;
+	font-weight: 700;
+
+	@media (max-width: $tablet) {
+		font-size: 48px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 40px;
+	}
+}
+
+.main__text {
+	margin-top: 30px;
+
+	@media (max-width: $mobile-l) {
+		// font-size: 40px;
+	}
+}
+
+.main__get-offer {
+	margin-top: 36px;
+}
+
+// Навигация по разделам
+.main__nav {
+    padding: 4px 0;
+
+	@media (max-width: 650px) {
+		// position: absolute;
+		// bottom: 14px;
+		// left: 0;
+		// left: 24px;
+		// width: 100%;
+	}
+
+	@media (max-width: $mobile-l) {
+		// left: 16px;
+	}
+}
+
+.main__nav-list {
+	display: flex;
+	align-items: center;
+
+	& li {
+		margin: 5px 10px;
+
+		& a {
+			--link-box-shadow: #96E5F0;
+
+			white-space: nowrap;
+			color: $accent;
+		}
+	}
+
+	@media (max-width: 650px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+// Изображение аппарата
+.main__thumb {
+	max-width: 650px;
+	width: 50%;
+
+	& img {
+		height: auto;
+	}
+
+	@media (max-width: 650px) {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,18 @@
+.princ {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.princ__body {
+
+	& .b-princ {
+
+		&:not(:last-child) {
+			margin-bottom: 120px;
+
+			@media (max-width: $mobile-l) {
+				margin-bottom: 80px;
+			}
+		}
+	}
+}

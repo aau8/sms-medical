@@ -1,0 +1,23 @@
+.chart {
+	background: #748890;
+	padding: 70px 0;
+
+	@media (max-width: $mobile-l) {
+		padding: 50px;
+	}
+}
+
+.chart__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+		gap: 64px
+	}
+
+	@media (max-width: $mobile-l) {
+		gap: 48px;
+	}
+}

@@ -1,0 +1,263 @@
+.advant__container {
+	max-width: 900px;
+}
+
+.advant__body {
+	max-width: 900px;
+
+	& .advant-b {
+
+		&:not(:last-child) {
+			margin-bottom: 150px;
+
+			@media (max-width: 600px) {
+				margin-bottom: 100px;
+			}
+
+			@media (max-width: 500px) {
+				margin-bottom: 80px;
+			}
+
+			@media (max-width: $mobile-m) {
+				margin-bottom: 60px;
+			}
+		}
+	}
+}
+
+// Блок Преимущества
+.advant-b {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+
+	@media (max-width: 600px) {
+		position: relative;
+		flex-direction: column;
+		padding-left: 70px;
+	}
+
+	@media (max-width: $mobile-m) {
+		padding-left: 60px;
+	}
+}
+
+.advant-b__title {
+	max-width: 336px;
+	width: 45%;
+	font-size: 30px;
+	font-weight: 600;
+	color: $accent;
+	line-height: 1.2;
+	text-align: right;
+
+	@media (min-width: 601px) and (max-width: $tablet) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 600px) {
+		max-width: none;
+		width: 100%;
+		text-align: left;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: $mobile-m) {
+		font-size: 22px;
+	}
+}
+
+.advant-b__tick {
+	width: 10%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 32px;
+
+	&.is-active {
+
+		& .advant-b__tick-icon {
+
+			&::before {
+				width: 40px;
+				height: 40px;
+				background: $accent;
+			}
+
+			& svg {
+				width: 16px;
+				height: 16px;
+				fill: #222;
+			}
+		}
+	}
+
+	@media (max-width: 900px) {
+		width: 8%;
+		margin: 0 16px;
+	}
+
+	@media (max-width: 600px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: auto;
+		margin: 0;
+	}
+
+	@media (max-width: 500px) {
+		height: 50px;
+	}
+}
+
+.advant-b__tick-icon {
+	position: relative;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $frame-main;
+
+	& svg {
+		position: relative;
+		z-index: 1;
+		width: 14px;
+		height: 14px;
+		fill: $light;
+		transition: $tr;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 30px;
+		height: 30px;
+		background: #4B5156;
+		border-radius: 50%;
+		transition: $tr;
+	}
+}
+
+.advant-b__content {
+	width: 45%;
+
+	& > .advant-b__content-block {
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+
+			@media (max-width: 500px) {
+				margin-bottom: 18px;
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		width: 100%;
+		margin-top: 24px;
+	}
+}
+
+.advant-b__content-block {
+
+}
+
+.advant-b__text {
+	max-width: 314px;
+
+	@media (min-width: 601px) and (max-width: $tablet) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 16px;
+	}
+}
+
+.advant-b__quant-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 22px;
+	// margin: 16px -12px -12px 0;
+	// margin: 16px -10px -6px;
+
+	// @media (min-width: 601px) and (max-width: $tablet) {
+		// margin: 4px -10px -6px;
+	// }
+
+	@media (max-width: 600px) {
+		margin-top: 4px;
+	}
+}
+
+.advant-b__quant {
+	min-width: fit-content;
+	width: 45%;
+	// margin: 6px 10px;
+	margin: 0 12px 12px 0;
+
+	&.with-labeller {
+
+		& .advant-b__quant-value {
+			color: $accent;
+		}
+	}
+
+	@media (max-width: $mobile-m) {
+		margin: 0 10px 10px 0;
+	}
+}
+
+.advant-b__quant-value {
+	font-size: 46px;
+	font-weight: 700;
+	color: $text-gray;
+
+	&.is-percent {
+
+		&::after {
+			content: '%';
+			font-size: 40px;
+			margin-left: 6px;
+
+			@media (min-width: 601px) and (max-width: $tablet) {
+				font-size: 34px;
+			}
+
+			@media (max-width: 500px) {
+				font-size: 34px;
+			}
+
+			@media (max-width: $mobile-m) {
+				font-size: 28px;
+				margin-left: 4px;
+			}
+		}
+	}
+
+	@media (min-width: 601px) and (max-width: $tablet) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: $mobile-m) {
+		font-size: 32px;
+	}
+}
+
+.advant-b__quant-label {
+	font-size: 14px;
+	margin-top: 2px;
+}
