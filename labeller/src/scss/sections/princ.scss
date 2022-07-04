@@ -6,13 +6,26 @@
 .princ__body {
 
 	& .b-princ {
+		padding: 60px 0;
 
-		&:not(:last-child) {
-			margin-bottom: 120px;
-
-			@media (max-width: $mobile-l) {
-				margin-bottom: 80px;
-			}
+		&:first-child {
+			padding-top: 0;
 		}
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		@media (max-width: $mobile-l) {
+			padding: 40px 0;
+		}
+
+		// &:not(:last-child) {
+		// 	margin-bottom: 120px;
+
+		// 	@media (max-width: $mobile-l) {
+		// 		margin-bottom: 80px;
+		// 	}
+		// }
 	}
 }

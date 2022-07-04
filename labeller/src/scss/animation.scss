@@ -1,0 +1,141 @@
+// Навигация по разделам
+.main-nav__inspector {
+
+	&.has-fixed {
+
+		& .main-nav {
+			position: fixed;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: $accent;
+			// padding: 16px 0;
+		}
+
+		& .main-nav__container {
+			--padding-vert: 16px;
+			padding-bottom: var(--padding-vert);
+			transition: $tr;
+
+			@media (max-width: $mobile-l) {
+				padding-bottom: 12px;
+
+				overflow-x: auto;
+				overflow-y: hidden;
+
+				@include scrollbar(100%, 4px, #fff, transparent);
+			}
+		}
+
+		& .main-nav__logo {
+			display: block;
+			margin-bottom: 16px;
+			transition: $tr;
+			animation: mainNavLogoShow .6s ease-in-out forwards;
+
+			@keyframes mainNavLogoShow {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+
+			@media (max-width: $mobile-l) {
+				display: none;
+			}
+		}
+
+		& .main-nav__list {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+
+			& li {
+
+				@media (max-width: $mobile-l) {
+
+					&:last-child {
+						padding-right: 16px;
+					}
+				}
+			}
+		}
+
+		& .main-nav__btn {
+			position: initial;
+			opacity: 1;
+			transform: translateX(0);
+			visibility: visible;
+			animation: mainNavBtnShow .6s ease-in-out forwards;
+
+			@keyframes mainNavBtnShow {
+				from {
+					opacity: 0;
+					transform: translateX(100px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+}
+
+// Фиксация шапки в разделе "Принцип работы"
+.princ__s-header {
+
+	& .s-header__title {
+		transition: $tr;
+	}
+
+	&.is-fixed {
+		position: relative;
+		z-index: 2;
+
+		& .s-header__title {
+			transform: scale(.7);
+		}
+	}
+}
+
+.b-princ__img {
+	// opacity: 0;
+}
+
+
+
+.b-princ_1 {
+
+	// &.is-show {
+
+	// 	& .b-princ__img {
+	// 		animation: bPrincImg .5s ease-in-out forwards;
+
+	// 		@keyframes bPrincImg {
+	// 			from {
+	// 				opacity: 0;
+	// 				transform: translate(0, 200px);
+	// 			}
+	// 			to {
+	// 				opacity: 1;
+	// 				transform: translate(0, 0);
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	&.is-hide-to-top {
+
+	}
+}
+
+.advant-b {
+	opacity: 0;
+}
+
+.advant-b__sep {
+	// opacity: 0;
+}
