@@ -304,8 +304,8 @@ window.addEventListener('load', e => {
 			scrollTrigger: {
 				// markers: true,
 				trigger: advant,
-				start: 'top 80%',
-				end: 'bottom 80%',
+				start: 'top 85%',
+				end: 'bottom 85%',
 				onEnter: () => {
 					tick.classList.add('is-active')
 
