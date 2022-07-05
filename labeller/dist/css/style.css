@@ -803,9 +803,9 @@ body {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0s;
-  -o-transition: 0s;
-  transition: 0s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main-nav__content {
@@ -840,7 +840,8 @@ body {
 }
 
 .about {
-  margin-top: 16%;
+  padding-top: 15%;
+  margin-top: 0;
 }
 
 .about__header {
@@ -866,7 +867,7 @@ body {
 .advant__body {
   --paddingAdvantB: 75px;
   max-width: 900px;
-  margin: -70px 0;
+  margin: -75px 0;
 }
 
 .advant__body .advant-b {
@@ -1266,6 +1267,12 @@ body {
   }
 }
 
+@media (max-width: 1500px) {
+  .about {
+    padding-top: 240px;
+  }
+}
+
 @media (max-width: 1100px) {
   .about__body {
     -ms-grid-columns: 1fr 1fr;
@@ -1352,10 +1359,6 @@ body {
 
   .main-nav__btn {
     display: none;
-  }
-
-  .about {
-    margin-top: 120px;
   }
 
   .about__header {
@@ -1454,6 +1457,10 @@ body {
   .advant__body .advant-b {
     --paddingAdvantB: 50px;
     padding-left: 70px;
+  }
+
+  .advant__body {
+    margin: -50px 0;
   }
 
   .advant-b {
@@ -1611,7 +1618,7 @@ body {
   }
 
   .about {
-    margin-top: 80px;
+    padding-top: 160px;
   }
 
   .about__logo {
@@ -1689,6 +1696,10 @@ body {
   .advant__body .advant-b {
     --paddingAdvantB: 40px;
     padding-left: 60px;
+  }
+
+  .advant__body {
+    margin: -40px 0;
   }
 
   .advant-b {
