@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="wrapper">
-        @@include('html/header.html',{})
+		<header style="height: 200px;background: #cecece;"></header>
 
 		<main class="main">
 			<div class="main__container">
@@ -19,20 +19,28 @@
 						<p class="main__text">система автоматического штрихкодирования контейнеров Sarstedt Monovette для медицинских учреждений</p>
 						<button class="btn is-fill main__get-offer">Получить предложение</button>
 					</div>
-					<nav class="main__nav">
-						<ul class="main__nav-list">
-							<li><a class="link" href="#">Felix</a></li>
-							<li><a class="link" href="#">Преимущества</a></li>
-							<li><a class="link" href="#">Принцип работы</a></li>
-							<li><a class="link" href="#">Видео</a></li>
-						</ul>
-					</nav>
+					<div class="main-nav__inspector">
+						<div class="main-nav">
+							<div class="main-nav__container">
+								<nav class="main-nav__content">
+									<!-- <div class="main-nav__logo"><img src="@img/logo.svg" alt=""></div> -->
+									<ul class="main-nav__list">
+										<li><a class="link" href="#about">Felix</a></li>
+										<li><a class="link" href="#advant">Преимущества</a></li>
+										<li><a class="link" href="#princ">Принцип работы</a></li>
+										<li><a class="link" href="#video">Видео</a></li>
+									</ul>
+								</nav>
+								<button class="btn is-ghost main-nav__btn">Получить предложение</button>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="main__thumb"><img src="@img/main.png" alt=""></div>
 			</div>
 		</main>
 		<div class="content">
-			<section class="section about">
+			<section class="section about" id="about">
 				<div class="about__container">
 					<div class="about__logo"><img src="@img/logo.svg" alt=""></div>
 					<!-- <div class="about__header"> -->
@@ -53,7 +61,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section advant">
+			<section class="section advant" id="advant">
 				<div class="advant__container">
 					<div class="s-header">
 						<h2 class="title s-header__title">Преимущества</h2>
@@ -61,11 +69,23 @@
 					<div class="advant__body">
 						<div class="advant-b">
 							<h3 class="advant-b__title">Сократите время обслуживания пациента</h3>
-							<div class="advant-b__tick is-active">
+							<div class="advant-b__tick">
 								<div class="advant-b__tick-icon">
 									<svg fill="none" viewBox="0 0 17 17">
 										<path fill-rule="evenodd" d="M15.88 2.22c.68.47.86 1.4.4 2.08L8.4 15.8a1.5 1.5 0 0 1-2.38.13l-5.14-6a1.5 1.5 0 1 1 2.28-1.95l3.87 4.51 6.75-9.88a1.5 1.5 0 0 1 2.09-.4Z" clip-rule="evenodd"/>
 									</svg>
+								</div>
+								<div class="advant-b__sep">
+									<div class="advant-b__sep-line">
+										<svg width="2" viewBox="0 0 2 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<line x1="0.6" y1="0.5" x2="0.6" y2="276" stroke="#9AA3AD" stroke-dasharray="1 7" stroke-linecap="square"></line>
+										</svg>
+									</div>
+									<div class="advant-b__sep-arrow">
+										<svg fill="none" viewBox="0 0 16 16">
+											<path fill="#9AA3AD" fill-rule="evenodd" d="M.8 4.1a1 1 0 0 1 1.4 0L8 9.9l5.8-5.8a1 1 0 1 1 1.4 1.42L8.93 11.8c-.5.5-1.33.5-1.84 0L.8 5.5a1 1 0 0 1 0-1.4Z" clip-rule="evenodd"/>
+										</svg>
+									</div>
 								</div>
 							</div>
 							<div class="advant-b__content">
@@ -91,6 +111,18 @@
 									<svg fill="none" viewBox="0 0 17 17">
 										<path fill-rule="evenodd" d="M15.88 2.22c.68.47.86 1.4.4 2.08L8.4 15.8a1.5 1.5 0 0 1-2.38.13l-5.14-6a1.5 1.5 0 1 1 2.28-1.95l3.87 4.51 6.75-9.88a1.5 1.5 0 0 1 2.09-.4Z" clip-rule="evenodd"/>
 									</svg>
+								</div>
+								<div class="advant-b__sep">
+									<div class="advant-b__sep-line">
+										<svg width="2" viewBox="0 0 2 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<line x1="0.6" y1="0.5" x2="0.6" y2="276" stroke="#9AA3AD" stroke-dasharray="1 7" stroke-linecap="square"></line>
+										</svg>
+									</div>
+									<div class="advant-b__sep-arrow">
+										<svg fill="none" viewBox="0 0 16 16">
+											<path fill="#9AA3AD" fill-rule="evenodd" d="M.8 4.1a1 1 0 0 1 1.4 0L8 9.9l5.8-5.8a1 1 0 1 1 1.4 1.42L8.93 11.8c-.5.5-1.33.5-1.84 0L.8 5.5a1 1 0 0 1 0-1.4Z" clip-rule="evenodd"/>
+										</svg>
+									</div>
 								</div>
 							</div>
 							<div class="advant-b__content">
@@ -150,7 +182,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section chart">
+			<section class="section chart" id="chart">
 				<div class="chart__container">
 					<div class="b-chart">
 						<div class="b-chart__num">
@@ -208,7 +240,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section princ">
+			<section class="section princ" id="princ">
 				<div class="princ__container">
 					<div class="s-header">
 						<h2 class="title s-header__title">Принцип работы</h2>
@@ -318,7 +350,7 @@
 					<button class="btn is-fill">Все характеристики</button>
 				</div>
 			</section>
-			<section class="section video has-colorful-bg">
+			<section class="section video has-colorful-bg" id="video">
 				<div class="video__container">
 					<div class="s-header">
 						<h2 class="title s-header__title">Видео</h2>
@@ -340,7 +372,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="banner-offer">
+			<section class="banner-offer" id="banner-offer">
 				<div class="banner-offer__container">
 					<div class="banner-offer__wrap">
 						<h2 class="banner-offer__title">Получите предложение на автоматизацию вашего процедурного кабинета</h2>
@@ -350,10 +382,9 @@
 			</section>
         </div>
 
-        @@include('html/footer.html',{})
+		<footer style="height: 150px;background: #cecece;"></footer>
 	</div>
 
-    @@include('html/modals.html', {})
     <script src="./js/bundle.min.js"></script>
 </body>
 </html>

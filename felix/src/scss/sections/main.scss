@@ -1,6 +1,6 @@
 .main {
 	height: 460px;
-	background: #748890;
+	background: $frame-accent;
 
 	@media (max-width: 650px) {
 		height: auto;
@@ -68,38 +68,72 @@
 }
 
 // Навигация по разделам
-.main__nav {
-    padding: 4px 0;
+.main-nav__inspector {
 
-	@media (max-width: 650px) {
-		// position: absolute;
-		// bottom: 14px;
-		// left: 0;
-		// left: 24px;
-		// width: 100%;
-	}
-
-	@media (max-width: $mobile-l) {
-		// left: 16px;
+	&:not(.has-fixed) .main-nav__container {
+		padding: 0;
 	}
 }
 
-.main__nav-list {
+.main-nav {
+	transition: $tr;
+}
+
+.main-nav__container {
+	--padding-vert: 4px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding-top: var(--padding-vert);
+}
+
+.main-nav__content {
+
+}
+
+.main-nav__logo {
+	display: none;
+	max-width: 104px;
+	filter: contrast(0%) brightness(2);
+
+	& img {
+		object-position: left;
+	}
+
+	@media (max-width: 600px) {
+		margin: 0 auto;
+	}
+}
+
+.main-nav__btn {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: $tr;
+
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
+
+.main-nav__content {
+	width: 100%;
+}
+
+.main-nav__list {
+	display: flex;
+	align-items: center;
+	margin: -5px -10px;
 
 	& li {
 		margin: 5px 10px;
 
 		& a {
-			--link-box-shadow: #96E5F0;
-
 			white-space: nowrap;
-			color: $accent;
 		}
 	}
 
-	@media (max-width: 650px) {
+	@media (max-width: 600px) {
 		flex-wrap: wrap;
 		justify-content: center;
 	}

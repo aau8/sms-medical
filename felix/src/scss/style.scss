@@ -68,6 +68,10 @@ $tr: .3s;
 // Сброс CSS
 @import "./reset";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $ff-main;
     font-size: 18px;
@@ -150,6 +154,5 @@ body {
 @import "./sections/banner-offer";
 @import "./sections/footer";
 
-
-// Стили для отдельных страниц
-// @import "./pages/";
+// Анимация
+@import "./animation";
