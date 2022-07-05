@@ -1,6 +1,7 @@
-import { removeAllClasses, bodyLock, nodeArray } from "./utils/functions.js"
+import { nodeArray } from "./utils/functions.js"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger.js"
+import { CountUp } from "countup.js/dist/countUp.js"
 
 gsap.registerPlugin( ScrollTrigger )
 
@@ -237,4 +238,52 @@ function fixMainNav() {
 	}
 
 	return navInspector
+}
+
+// Счетчик в разделе с цифрами
+const bChartElems = document.querySelectorAll('.b-chart')
+
+bChartElems.forEach( bChart => {
+	const num = bChart.querySelector('.b-chart__num-value')
+	const count = new CountUp(num, num.dataset.num);
+
+	gsap.timeline( { 
+		scrollTrigger: {
+			trigger: bChart,
+			start: 'top 70%',
+			onEnter: () => {
+				count.start()
+
+				// Самописное событие. У пакета CountUp его нет
+				bChart.addEventListener('change-num', e => {
+					const value = Number( num.innerText )
+					const round = bChart.querySelector('.b-chart__num-round')
+
+					changeRound( value, round )
+				})
+			}
+		}
+	} )
+} )
+
+// Динамические круги в разделе "chart"
+dinamicChart()
+function dinamicChart() {
+	const bChartArray = nodeArray('.b-chart')
+
+	bChartArray.forEach( bChart => {
+		const value = Number(bChart.querySelector('.b-chart__num-value').innerText)
+		const round = bChart.querySelector('.b-chart__num-round')
+
+		changeRound( value, round )
+	} )
+}
+
+function changeRound( value, round ) {
+	const strokeDashoffset = 550
+	const minStrokeDasharray = strokeDashoffset
+	const maxStrokeDasharray = 1090
+
+	round.style.strokeDashoffset = strokeDashoffset
+	round.style.strokeDasharray = ( maxStrokeDasharray - minStrokeDasharray ) / 100 * value + strokeDashoffset
 }

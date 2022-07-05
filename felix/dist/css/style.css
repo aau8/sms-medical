@@ -645,7 +645,8 @@ body {
 }
 
 .b-princ_5 .b-princ__img {
-  margin-left: 140px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .b-princ__content {
@@ -1479,7 +1480,7 @@ body {
   }
 
   .b-princ_5 .b-princ__img {
-    margin-left: 0;
+    margin: 0;
   }
 
   .b-princ__title {
