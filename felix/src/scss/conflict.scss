@@ -2,11 +2,26 @@ header, #header {
 	background: $light;
 }
 
-.felixnew.maxwidth-theme {
-    max-width: none;
-    padding: 0;
-    background: none;
-    padding-bottom: 0 !important;
+.felixnew {
+
+	&.maxwidth-theme {
+		max-width: none;
+		padding: 0;
+		background: none;
+		padding-bottom: 0 !important;
+	}
+
+	& .about {
+		margin-top: 0;
+	}
+
+	& .princ {
+		margin-bottom: 0;
+	}
+
+	& .video {
+		margin-top: 0;
+	}
 }
 
 .title,
@@ -25,6 +40,6 @@ header, #header {
 	margin: 0;
 }
 
-.b-chart__text {
+.b-chart__text b {
 	color: inherit;
 }

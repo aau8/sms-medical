@@ -78,7 +78,6 @@ svg {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  vertical-align: top;
 }
 
 h1,
@@ -1308,6 +1307,18 @@ header,
   padding-bottom: 0 !important;
 }
 
+.felixnew .about {
+  margin-top: 0;
+}
+
+.felixnew .princ {
+  margin-bottom: 0;
+}
+
+.felixnew .video {
+  margin-top: 0;
+}
+
 .title,
 .main__title,
 .b-video__title,
@@ -1324,7 +1335,7 @@ header,
   margin: 0;
 }
 
-.b-chart__text {
+.b-chart__text b {
   color: inherit;
 }
 
