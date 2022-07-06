@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -140,7 +139,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 82.5rem;
+  max-width: 1320px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
@@ -248,6 +247,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  border: none;
   border-radius: 2px;
   padding: 0 19px;
   -webkit-transition: 0.3s;
@@ -870,6 +870,7 @@ body {
 }
 
 .main-nav__list li a {
+  color: var(--link-box-shadow);
   white-space: nowrap;
 }
 
@@ -1293,6 +1294,38 @@ body {
 
 .advant-b {
   opacity: 0;
+}
+
+header,
+#header {
+  background: #fff;
+}
+
+.felixnew.maxwidth-theme {
+  max-width: none;
+  padding: 0;
+  background: none;
+  padding-bottom: 0 !important;
+}
+
+.title,
+.main__title,
+.b-video__title,
+.banner-offer__title {
+  color: #fff;
+}
+
+.title,
+.c-about__title,
+.advant-b__title,
+.b-princ__title,
+.b-video__title,
+.banner-offer__title {
+  margin: 0;
+}
+
+.b-chart__text {
+  color: inherit;
 }
 
 @media (min-width: 451px) {
@@ -1848,6 +1881,7 @@ body {
   }
 
   .link:hover {
+    color: var(--link-box-shadow);
     -webkit-box-shadow: inset 0 -1.4px var(--link-box-shadow);
             box-shadow: inset 0 -1.4px var(--link-box-shadow);
   }

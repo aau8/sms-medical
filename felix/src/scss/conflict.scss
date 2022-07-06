@@ -1,0 +1,30 @@
+header, #header {
+	background: $light;
+}
+
+.felixnew.maxwidth-theme {
+    max-width: none;
+    padding: 0;
+    background: none;
+    padding-bottom: 0 !important;
+}
+
+.title,
+.main__title,
+.b-video__title,
+.banner-offer__title {
+	color: $light;
+}
+
+.title,
+.c-about__title,
+.advant-b__title,
+.b-princ__title,
+.b-video__title,
+.banner-offer__title {
+	margin: 0;
+}
+
+.b-chart__text {
+	color: inherit;
+}
