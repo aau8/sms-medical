@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +78,6 @@ svg {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  vertical-align: top;
 }
 
 h1,
@@ -245,6 +243,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+  border: none;
   border-radius: 2px;
   padding: 0 19px;
   -webkit-transition: 0.3s;
@@ -827,6 +826,7 @@ body {
 }
 
 .main-nav__list li a {
+  color: var(--link-box-shadow);
   white-space: nowrap;
 }
 
@@ -1252,6 +1252,50 @@ body {
 
 .advant-b {
   opacity: 0;
+}
+
+header,
+#header {
+  background: #fff;
+}
+
+.labellernew.maxwidth-theme {
+  max-width: none;
+  padding: 0;
+  background: none;
+  padding-bottom: 0 !important;
+}
+
+.labellernew .about {
+  margin-top: 0;
+}
+
+.labellernew .princ {
+  margin-bottom: 0;
+}
+
+.labellernew .video {
+  margin-top: 0;
+}
+
+.title,
+.main__title,
+.b-video__title,
+.banner-offer__title {
+  color: #fff;
+}
+
+.title,
+.c-about__title,
+.advant-b__title,
+.b-princ__title,
+.b-video__title,
+.banner-offer__title {
+  margin: 0;
+}
+
+.b-chart__text b {
+  color: inherit;
 }
 
 @media (min-width: 801px) {
@@ -1772,6 +1816,7 @@ body {
   }
 
   .link:hover {
+    color: var(--link-box-shadow);
     -webkit-box-shadow: inset 0 -1.4px var(--link-box-shadow);
             box-shadow: inset 0 -1.4px var(--link-box-shadow);
   }

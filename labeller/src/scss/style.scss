@@ -5,7 +5,7 @@
 
 // Шрифты
 // @include font('Gilroy', normal, 400, '../resources/fonts/Gilroy/Gilroy-Regular.woff2');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 // Переменные
 // Текст
@@ -150,3 +150,6 @@ body {
 
 // Анимация
 @import "./animation";
+
+// Решения конфликтов стилей
+@import "./conflict";
