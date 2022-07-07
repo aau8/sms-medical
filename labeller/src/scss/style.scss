@@ -110,7 +110,7 @@ body {
 */
 [class*="__container"] {
     @if ($max-width-container>0) {
-        max-width: $max-width-container;
+        max-width: $max-width-container + px;
         box-sizing: content-box;
         margin: 0 auto;
     }

@@ -134,7 +134,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 1320;
+  max-width: 1320px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
